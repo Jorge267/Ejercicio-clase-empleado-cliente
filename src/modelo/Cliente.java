@@ -34,12 +34,14 @@ public class Cliente extends Persona{
     
     @Override
     public void agregar(){
-    System.out.println("Nit" + getNit() );
-    System.out.println("Nombres" + this.getNombres() );
-    System.out.println("Apellidos" + this.getApellidos() );
-    System.out.println("Direccion" + this.getDireccion() );
-    System.out.println("Telefono" + this.getTelefono() );
-    System.out.println("Fecha nacimiento" + this.getFecha_nacimiento () );
+    System.out.println("__________________________");
+    System.out.println("Nombres: " + this.getNombres() );
+    System.out.println("Apellidos: " + this.getApellidos() );
+    System.out.println("Direccion: " + this.getDireccion() );
+    System.out.println("Telefono: " + this.getTelefono() );
+    System.out.println("Fecha nacimiento: " + this.getFecha_nacimiento () );
+    System.out.println("Direccion: " + this.getDireccion() );
+    System.out.println("__________________________");
 
     }
 

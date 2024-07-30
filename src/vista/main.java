@@ -16,8 +16,19 @@ public class main {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        frm_cliente frm = new frm_cliente();
-        frm.show();
+        /*Quita el comentario para mostrar el otro formulario*/
+        
+        /////// FORMULARIO CLIENTE /////////
+        
+        frm_cliente frm1 = new frm_cliente();
+        frm1.show();
+        
+        ////// FORMULARIO EMPLEADO /////////
+        
+        frm_empleado frm2 = new frm_empleado();
+        frm2.show();
+        
+        /////////////////////////////////////////
     }
     
 }
