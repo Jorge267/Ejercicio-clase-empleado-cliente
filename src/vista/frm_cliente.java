@@ -13,8 +13,10 @@ public class frm_cliente extends javax.swing.JFrame {
     /**
      * Creates new form frm_cliente
      */
+    Cliente obj_cliente;
     public frm_cliente() {
         initComponents();
+        obj_cliente = new Cliente();
     }
 
     /**
@@ -147,14 +149,7 @@ public class frm_cliente extends javax.swing.JFrame {
     private void btn_aceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_aceptarActionPerformed
         // TODO add your handling code here:
         
-    Cliente obj_cliente = new Cliente();
-    obj_cliente.setNit(txt_nit.getText());
-    obj_cliente.setNombres(txt_nombres.getText());
-    obj_cliente.setApellidos(txt_apellidos.getText());
-    obj_cliente.setDireccion(txt_direccion.getText());
-    obj_cliente.setTelefono(txt_telefono.getText());
-    obj_cliente.setFecha_nacimiento(txt_fecha_nac.getText());
-    
+    obj_cliente = new Cliente(txt_nit.getText(),txt_nombres.getText(),txt_apellidos.getText(),txt_direccion.getText(),txt_telefono.getText(),txt_fecha_nac.getText());    
     obj_cliente.agregar();
 
     }//GEN-LAST:event_btn_aceptarActionPerformed
